@@ -23,15 +23,17 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
+  align-items: center;
 }
 .info {
   display: flex;
+  align-items: center;
 }
 
 .main {
   display: flex;
   margin-top: 15%;
-  margin-left: 17px;
+  margin-left: 15px;
 }
 h2 {
   font-weight: 500;
@@ -49,8 +51,50 @@ h2 {
 .first {
   font-size: 16px;
   background-color: #278fff;
-  outline: none;
 }
+
 .second {
   margin-left: 20px;
+}
+
+.btn {
+  color: rgb(255, 255, 255);
+  padding: 13px 21px;
+  font-weight: bold;
+  border: 2px solid #278fff;
+  border-radius: 4px;
+  outline: none;
+  font-size: 12px;
+}
+
+.btn-small {
+  padding: 7px 15px;
+}
+
+/* .btn-block {
+width: 100%;
+} */
+
+.btn-outline {
+  background-color: #ffffff;
+  color: #278fff;
+  border: 2px solid #278fff;
+}
+
+.btn-link {
+  border: none;
+  background-color: transparent;
+  color: #4d4d4d;
+}
+
+.btn-primary {
+  background-color: #278fff;
+}
+
+.info div {
+  margin-right: 12px;
+}
+
+.info div:last-child {
+  margin-right: 0px;
 }
