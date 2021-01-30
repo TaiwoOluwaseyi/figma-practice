@@ -2,64 +2,97 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
+      name="viewport"
+    />
     <title>Anglo pay</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="top">
-        <div class="logo">
-          <img src="Group 174 (1).png" class="anglo" alt="anglopay" />
-        </div>
-
-        <div class="info">
-          <div>
-            <button class="btn btn-link btn-small">Home</button>
+    <div class="full-height">
+      <div class="container">
+        <div class="top">
+          <div class="logo">
+            <img src="Group 174 (1).png" class="anglo" alt="anglopay" />
           </div>
-          <div>
-            <button class="btn btn-link btn-small">About Us</button>
+          <div id="hamburger" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-
-          <div>
-            <button class="btn btn-link btn-small">FAQs</button>
-          </div>
-
-          <div>
-            <button class="btn btn-outline">Sign In</button>
-          </div>
-
-          <div>
-            <button class="btn btn-primary">Sign Up</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="main">
-        <div class="intro">
-          <h2>Welcome to the Future.</h2>
-          <p>
-            Anglo Pay offers effective management of cryptocurrencies.With just
-            a few clicks<br />
-            you can transfer cryptocurrencies<br />
-            anywhere in the world.
-          </p>
-
-          <div class="bottom">
-            <div class="first">
-              <button class="btn btn-primary">Get Started</button>
+          <div class="info">
+            <div>
+              <button class="btn btn-link btn-small">Home</button>
+            </div>
+            <div>
+              <button class="btn btn-link btn-small">About Us</button>
             </div>
 
-            <div class="second">
-              <button class="btn btn-outline">Learn More</button>
+            <div>
+              <button class="btn btn-link btn-small">FAQs</button>
+            </div>
+
+            <div>
+              <button class="btn btn-outline">Sign In</button>
+            </div>
+
+            <div>
+              <button class="btn btn-primary">Sign Up</button>
             </div>
           </div>
         </div>
+        <div id="dropdown" class="info-mobile">
+          <div>
+            <button class="btn btn-link btn-block">Home</button>
+          </div>
+          <div>
+            <button class="btn btn-link btn-block">About Us</button>
+          </div>
+          <div>
+            <button class="btn btn-link btn-block">FAQs</button>
+          </div>
+          <div>
+            <button class="btn btn-outline btn-block">Sign In</button>
+          </div>
+          <div>
+            <button class="btn btn-primary btn-block">Sign Up</button>
+          </div>
+        </div>
+        <div class="main">
+          <div class="intro">
+            <h2>Welcome to the Future.</h2>
+            <p>
+              Anglo Pay offers effective management of cryptocurrencies.With
+              just a few clicks<br />
+              you can transfer cryptocurrencies<br />
+              anywhere in the world.
+            </p>
 
-        <div class="device">
-          <img src="Group 190 (2).png"image" alt="device and atm" />
+            <div class="bottom">
+              <div class="first">
+                <button class="btn btn-primary">Get Started</button>
+              </div>
+
+              <div class="second">
+                <button class="btn btn-outline">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="device">
+            <img src="Group 190 (2).png" alt="device and atm" />
+          </div>
         </div>
       </div>
     </div>
+    <script>
+      let elem = document.getElementById("hamburger");
+      let dropDownElement = document.getElementById("dropdown");
+
+      elem.addEventListener("click", function () {
+        dropDownElement.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

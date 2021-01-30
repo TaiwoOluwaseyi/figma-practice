@@ -17,7 +17,7 @@ body {
   max-width: 880px;
   padding: 0 30px;
   background-color: #fafafa;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 .top {
   display: flex;
@@ -71,9 +71,9 @@ h2 {
   padding: 7px 15px;
 }
 
-/* .btn-block {
-width: 100%;
-} */
+.btn-block {
+  width: 100%;
+}
 
 .btn-outline {
   background-color: #ffffff;
@@ -97,4 +97,65 @@ width: 100%;
 
 .info div:last-child {
   margin-right: 0px;
+}
+
+.hamburger {
+  width: 16px;
+  height: 16px;
+  border: 1px solid #278fff;
+  padding: 8px;
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 3px;
+}
+
+.hamburger div {
+  border: 1px solid #278fff;
+  border-width: thin;
+}
+
+.info-mobile {
+  display: none;
+}
+
+@media (max-width: 575.98px) {
+  .info {
+    display: none;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+  }
+
+  .device img {
+    width: 100%;
+    display: none;
+  }
+
+  .full-height {
+    height: 100vh;
+  }
+
+  .info-mobile {
+    display: none;
+    flex-direction: column;
+  }
+
+  .info-mobile div {
+    margin-bottom: 5px;
+  }
+
+  .info-mobile div:last-child {
+    margin-bottom: 0;
+  }
+
+  .active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
 }
