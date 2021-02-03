@@ -2,23 +2,20 @@ html {
   box-sizing: border-box;
 }
 body {
-  background-color: #e5e5e5;
+  /* background-color: #e5e5e5; */
+  background-color: #fafafa;
   margin: 0;
   padding: 0;
+  width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.anglo {
-  margin-left: 30px;
-}
+
 .container {
-  margin: 0 auto;
-  width: 50%;
-  max-width: 880px;
-  padding: 0 30px;
-  background-color: #fafafa;
-  /* margin-top: 5%; */
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
+
 .top {
   display: flex;
   justify-content: space-between;
@@ -32,19 +29,26 @@ body {
 
 .main {
   display: flex;
-  margin-top: 15%;
-  margin-left: 15px;
-}
-h2 {
-  font-weight: 500;
+  margin-top: 25px;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-left: 15px; */
 }
 .intro {
-  margin-top: 7%;
   font-weight: 500;
   font-size: 14px;
-  margin-left: 20px;
   line-height: 20px;
 }
+.device {
+  /* margin-left: 150px; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.device img {
+  width: 70%;
+}
+
 .bottom {
   display: flex;
 }
@@ -57,6 +61,9 @@ h2 {
   margin-left: 20px;
 }
 
+span {
+  color: #278fff;
+}
 .btn {
   color: rgb(255, 255, 255);
   padding: 13px 21px;
@@ -69,6 +76,7 @@ h2 {
 
 .btn-small {
   padding: 7px 15px;
+  font-weight: 100;
 }
 
 .btn-block {
@@ -79,6 +87,7 @@ h2 {
   background-color: #ffffff;
   color: #278fff;
   border: 2px solid #278fff;
+  font-weight: 100;
 }
 
 .btn-link {
@@ -124,9 +133,8 @@ h2 {
     display: none;
   }
   .container {
-    width: 100%;
-    height: 100%;
-    padding: 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .device img {
@@ -157,5 +165,6 @@ h2 {
 
   .hamburger {
     display: flex;
+    margin-right: 20px;
   }
 }
