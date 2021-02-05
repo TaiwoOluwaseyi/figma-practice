@@ -165,4 +165,8 @@ span {
     display: flex;
     margin-right: 20px;
   }
+
+  .intro {
+    font-size: 12px;
+  }
 }
