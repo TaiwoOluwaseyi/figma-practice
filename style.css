@@ -32,15 +32,13 @@ body {
   margin-top: 25px;
   justify-content: space-between;
   align-items: center;
-  /* margin-left: 15px; */
 }
 .intro {
   font-weight: 500;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
 }
 .device {
-  /* margin-left: 150px; */
   display: flex;
   justify-content: flex-end;
 }
